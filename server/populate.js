@@ -1,8 +1,7 @@
 require('dotenv').config()
 const connectDb = require('./db/connect')
-const mongoose = require('mongoose')
 const Interpreter = require('./models/Interpreter')
-const jsonInterpreters = require('../db.json')
+const jsonInterpreters = require('../src/db.json')
 
 const start = async () => {
   try {

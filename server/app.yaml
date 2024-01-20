@@ -1,0 +1,11 @@
+runtime: nodejs18
+env: standard
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+
+env_variables:
+  MONGO_URI: "projects/610795912847/secrets/MONGO_URI/versions/1"
