@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Amrit Strong",
+    "userID": 1,
+    "countryOfOrigin": "Romania",
+    "province": "Ontario",
+    "languagePreference": ["originLanguage", "targetLanguage"]
+  },
+  {
+    "name": "James Sawyer",
+    "userID": 2,
+    "countryOfOrigin": "Italy",
+    "province": "Ontario",
+    "languagePreference": ["originLanguage", "targetLanguage"]
+  },
+  {
+    "name": "Matthew Durston",
+    "userID": 3,
+    "countryOfOrigin": "Albania",
+    "province": "Ontario",
+    "languagePreference": ["originLanguage", "targetLanguage"]
+  },
+  {
+    "name": "Khalid Hasan",
+    "userID": 4,
+    "countryOfOrigin": "Albania",
+    "province": "Ontario",
+    "languagePreference": ["originLanguage", "targetLanguage"]
+  },
+  {
+    "name": "David Alvarez",
+    "userID": 5,
+    "countryOfOrigin": "Albania",
+    "province": "Ontario",
+    "languagePreference": ["originLanguage", "targetLanguage"]
+  }
+]
