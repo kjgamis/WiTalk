@@ -1,0 +1,22 @@
+[
+  {
+    "signUpCriteria": {
+      "languageProficiency": {
+        "requiredLanguages": ["originLanguage", "targetLanguage"]
+      },
+      "education": {
+        "degree": "Bachelors Degree",
+        "specialized training": true
+      }
+    },
+    "Certification": {
+      "professionalCertifications": true
+    },
+    "experience": {
+      "practical experience": true,
+      "specialized experience": true
+    },
+    "location": {},
+    "gender": ["male", "female"]
+  }
+]
