@@ -24,17 +24,29 @@
       <div class="img">
         <div class="container">
             <form>
-          <div id="login-form" class="form">
-            <h2>WiTalk</h2>
-            <div class="loginPage page" id="pageOne">
-                <div class="buttons">
-                    <a class="waves-effect waves-light btn1">Create an Account</a>
-                    <a class="waves-effect waves-light btn2">Login</a>
-                </div>
-              <p>Need help logging in? <a href="#" onclick="showSignupForm()">Contact Us</a></p>
+              <div id="login-form" class="form">
+                <h2>WiTalk</h2>
+                <div class="loginPage page" id="pageOne">
+                  <div class="buttons">
+                      <a class="waves-effect waves-light btn1">Create an Account</a>
+                      <a class="waves-effect waves-light btn2">Login</a>
+                  </div>
+                  <p>Need help logging in? <a href="#" onclick="showSignupForm()">Contact Us</a></p>
+              </div>
             </form>
           </div>
         </div>
+      <div class="pageContainer name">
+        <div class = pageOne ></div>
+        <div class = pageTwo></div>
+        <div class = pageThree></div>
+        <div class = pageFour></div>
+        <div class = pageFive></div>
+        <div class = pageSix></div>
+        <div class="continueButton">
+          <a class="waves-effect waves-light continueBtn">Continue</a>
+        </div>
+      </div>
 
         <div id="signup-form" class="form hidden">
           <h2>Sign Up</h2>
@@ -68,15 +80,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!--<form id="login-form">
-    <label for="login-username">Username:</label>
-    <input type="text" id="login-username" required />
-    <label for="login-password">Password:</label>
-    <input type="password" id="login-password" required />
-    <button type="button" onclick="login()">Login</button>
-    <p>
-      Don't have an account?
-      <a href="#" onclick="showSignupForm()">Create an Account</a>
-    </p>
-  </form>-->

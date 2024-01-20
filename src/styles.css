@@ -69,3 +69,23 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+
+.continueButton {
+  text-align: center;
+  position: relative;
+  padding-top: 155%;
+}
+
+.continueBtn {
+  font-weight: bold;
+  background-color: #27326d;
+  padding: 10px;
+  width: 150px;
+  border-radius: 25px;
+}
