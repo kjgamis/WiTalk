@@ -18,6 +18,9 @@ const page7 = document.getElementById("page7");
 const page8 = document.getElementById("page8");
 const page9 = document.getElementById("homePage");
 const footer = document.getElementById("footerNav");
+const bio = document.getElementById("bio");
+const profile = document.getElementById("profilePage");
+const menu = document.getElementById("homePage");
 
 button1.addEventListener("click", () => {
   page1.style.display = "none";
@@ -50,16 +53,23 @@ button7.addEventListener("click", () => {
   page5.style.display = "none";
   page6.style.display = "block";
 });
-
 button8.addEventListener("click", () => {
   page6.style.display = "none";
   page7.style.display = "block";
 });
 button9.addEventListener("click", () => {
   page7.style.display = "none";
-  page9.style.display = "block";
   addNewCard();
+  page9.style.display = "block";
   footer.style.display = "block";
+});
+profile.addEventListener("click", () => {
+  homePage.style.display = "none";
+  bio.style.display = "block";
+});
+home.addEventListener("click", () => {
+  bio.style.display = "none";
+  page9.style.display = "block";
 });
 
 function addNewCard() {

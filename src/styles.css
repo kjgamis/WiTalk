@@ -16,15 +16,12 @@
 }
 
 .app {
-
   width: 100%;
   height: 80pt;
   position: absolute;
   height: 100%;
   width: 100%;
- 
 }
-
 
 #page2,
 #page3,
@@ -34,34 +31,38 @@
 #page7,
 #page8,
 #page9,
-#homePage {
+#homePage,
+#bio {
   display: none;
 }
 
-#first-name{
-  margin:auto;
-
-  
+#first-name {
+  margin: auto;
 }
-#page1{
+#page1 {
   background-image: url("https://cdn.discordapp.com/attachments/1198061671428665346/1198452022677082262/Screenshot_2024-01-20_at_9.20.23_PM.png?ex=65bef46c&is=65ac7f6c&hm=851f77415f1a2ef5287cee73de578daa21e661b864e2ce9cbd57dc6ac28c9ae0&");
-  color:white;
-  padding:50px;
+  color: white;
+  padding: 50px;
   text-align: center;
   font-size: 30px;
   box-shadow: #27326d 5px;
   background-position: 50% 50%;
   background-size: 120%;
 }
-#page2,#page3,#page4,#page5,#page7,#page6{
-  padding:50px;
+#page2,
+#page3,
+#page4,
+#page5,
+#page7,
+#page6 {
+  padding: 50px;
   text-align: center;
   font-size: 30px;
   color: #27326d;
   box-shadow: #27326d 5px;
 }
 
-.button{
+.button {
   position: center;
   margin: auto;
   background-color: #27326d;
@@ -73,42 +74,40 @@
   margin: auto;
   background-color: #27326d;
   border-radius: 20px;
-  padding-top:20px;
+  padding-top: 20px;
   padding-bottom: 125px;
-
-
 }
 #button1 {
   margin-top: 500px;
-  padding-left:20px;
-  padding-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #27326d;
 }
 #button2 {
   margin-top: 20px;
-  padding-right:75px;
-  padding-left:75px;
-  background-color: #DCE1FF;
+  padding-right: 75px;
+  padding-left: 75px;
+  background-color: #dce1ff;
   color: #27326d;
 }
 
-#button3{
-margin-top:100px;
+#button3 {
+  margin-top: 125px;
 }
-#button4{
-  margin-top:100px;
+#button4 {
+  margin-top: 133px;
 }
-#button7{
+#button7 {
   margin-top: 470px;
 }
-#button8{
-  margin-top:470px;
+#button8 {
+  margin-top: 470px;
 }
-#button9{
-  margin-top:410px;
+#button9 {
+  margin-top: 410px;
 }
 
-#page4{
+#page4 {
   text-align: center;
 }
 
@@ -146,9 +145,7 @@ h2 {
   width: 390px; /* Need a specific value to work */
   align-items: center;
   box-shadow: 0 0 20px 0 black;
- 
 }
-
 
 .pageTwoHeader {
   display: inline-block;
@@ -228,4 +225,46 @@ div.item {
 .caption {
   display: block;
   color: white;
+}
+
+.quick-bio {
+  color: #27326d;
+  display: inline-block;
+  padding-left: 10px;
+}
+.flag-bio {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  top: 100px;
+  right: 25px;
+}
+.interpreterInfo {
+  padding-top: 72px;
+  position: fixed;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+.interpreterMainBio {
+  padding-top: 50%;
+  overflow-y: auto;
+  padding-bottom: 25%;
+  color: #777777;
+  padding-left: 20px;
+}
+.interpreterMainBio h5 {
+  color: #27326d;
+}
+.profile {
+  margin-left: 20px;
+  float: left;
+  /* margin-top: 50px; */
+  width: 90px;
+  height: 95px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  border-radius: 50%;
 }
