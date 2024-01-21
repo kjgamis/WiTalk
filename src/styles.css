@@ -1,63 +1,167 @@
-.pages{
+.pages {
   margin: auto;
 
   width: 390px;
   height: 844px;
 
-
   /* visibility: hidden; */
-  position:absolute;
-  left:50%;
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  position: absolute;
+  left: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 390px; /* Need a specific value to work */
-  align-items:center;
+  align-items: center;
   box-shadow: 0 0 20px 0 black;
-
 }
-#page1{
 
-  background-image: url("https://media.discordapp.net/attachments/1198061671428665346/1198356962971242687/newcomer-womens-services-english-classesjpg.jpg?ex=65be9be4&is=65ac26e4&hm=682e906535ac0261203b159e27ab3a7ad19a1cb838205202b3b8c146cb111237&=&format=webp&width=1015&height=676");
-
-  background-position: bottom 175px right -150px;
-  background: linear-gradient(0deg, 50%,white);
-  
-
+.app {
+  text-align: center;
+  width: 100%;
+  height: 80pt;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-#page2, #page3, #page4, #page5,#page6,#page7,#page8,#page9,#homepage{
+
+#page1 {
+  background-image: url("https://cdn.discordapp.com/attachments/1198061671428665346/1198452022677082262/Screenshot_2024-01-20_at_9.20.23_PM.png?ex=65bef46c&is=65ac7f6c&hm=851f77415f1a2ef5287cee73de578daa21e661b864e2ce9cbd57dc6ac28c9ae0&");
+  /* background-position: bottom 175px right -150px; */
+  background: linear-gradient(0deg, 100%, white, green);
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+#page2,
+#page3,
+#page4,
+#page5,
+#page6,
+#page7,
+#page8,
+#page9,
+#homePage {
   display: none;
 }
-#button1{
-margin-top:500px;
-
+#button1 {
+  margin-top: 500px;
 }
-#button2{
-  margin-top:20px;
-
-  
+#button2 {
+  margin-top: 20px;
 }
 
-.app{
-
-  text-align:center;
-  width:100%;
-  height: 80pt;
-
- 
-}
-
-.button{
-  margin:20px;
-  background-color:#27326D;
-  border-radius:20px;
+.button {
+  margin: 20px;
+  background-color: #27326d;
+  border-radius: 20px;
   padding-bottom: 20px;
 }
-.choice{
-  padding:50px;
-  background-color:#27326D;
-  border-radius:20px;
+.choice {
+  padding: 50px;
+  background-color: #27326d;
+  border-radius: 20px;
+}
+.mainPage {
+  position: absolute;
+}
+h2 {
+  text-align: center;
+}
+.login-form {
+  text-align: center;
+  padding: 20px;
+}
+.loginButtons {
+  margin-top: 175%;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+#homePage {
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+.pageTwoHeader {
+  display: inline-block;
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin: 46px 0 0 20px;
+
+  color: #27326d;
+}
+.sidenav-trigger {
+  margin: 46px 30px 0px 0px;
+  float: right;
+}
+#search {
+  background-color: white;
 }
 
+.headshot {
+  width: 90px;
+  height: 95px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  border-radius: 10px;
+}
+.flag {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card-bio {
+  float: right;
+  padding: 30px 0 0 10px;
+}
+.card {
+  border-radius: 10px;
+}
+.card-content {
+  display: inline-block;
+  color: #27326d;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px;
+}
+
+#footerNav {
+  display: none;
+}
+
+#userNav {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: -5px;
+  width: 100%;
+  height: 90px;
+  background-color: #27326d;
+  overflow: visible;
+}
+.navButtons {
+  margin-top: 10px;
+  text-align: center;
+}
+.iconSet {
+  height: 30px;
+}
+div.item {
+  margin-top: 5px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 85px;
+}
+.caption {
+  display: block;
+  color: white;
+}
