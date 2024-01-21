@@ -73,11 +73,11 @@ gcloud app deploy
 ```
 
 ## What's next for WiTalk
-Integrate a frontend framework like React to leverage built-in features such as routing and state management, streamlining the development process with functionalities that may be challenging to configure manually. Fortunately, implementing a frontend framework like React is feasible for us, given that our API is accessible irrespective of the frontend.
+Integrate a frontend framework like React or React Native to leverage built-in features such as routing and state management, streamlining the development process with functionalities that may be challenging to configure manually. Fortunately, implementing a frontend framework is feasible for us, given that our API is accessible irrespective of the frontend.
 
 Enhance API security by implementing authentication headers. This additional layer of protection will safeguard against unauthorized access and potential security breaches, ensuring a more secure and resilient API.
 
-Develop robust authentication and authorization mechanisms, prioritizing the secure and safe storage of user data to fortify
+Develop robust authentication and authorization mechanisms, prioritizing the secure and safe storage of user data to fortify overall system integrity.
 
 ### Contributors
 - [Kage Gamis](https://linkedin.com/in/kjgamis)
