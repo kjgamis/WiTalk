@@ -72,30 +72,39 @@ home.addEventListener("click", () => {
   page9.style.display = "block";
 });
 
+let interpreters = []
+fetch(`https://api-dot-witalk-411901.nn.r.appspot.com/api/interpreters`)
+  .then(data => data.json())
+  .then(res => {
+    interpreters = res.data
+  })
+
 function addNewCard() {
-  getInterpreter.forEach((getInterpreter) => {
-    var newCard = document.createElement("div");
-    let homePage = document.getElementById("homePage");
-    newCard.innerHTML = `
-    <div class="col s12 m6">
+  if (interpreters) {
+    interpreters.forEach(({ profilePicLink, country, name, distance, yearsOfExperience }) => {
+      var newCard = document.createElement("div");
+      let homePage = document.getElementById("homePage");
+      newCard.innerHTML = `
+      <div class="col s12 m6">
       <div class="card">
-        <div class="card-image">
-          <span class="card-title"></span>
-          <a class=" halfway-fab waves-effect waves-light"></a>
-        </div>
-        <div class="card-content">
-          <img class="headshot"src="./images/jessicaDiaz.jpg">
-          <img class="flag"src="./images/columbia.png">
-          <div class="card-bio">
-            <p><b>${getInterpreter.name}</b></p>
-            <p>${getInterpreter.distance}</p>
-            <p>${getInterpreter.yearsOfExperience} Years of experience</p>
-        </div>
+      <div class="card-image">
+      <span class="card-title"></span>
+      <a class=" halfway-fab waves-effect waves-light"></a>
       </div>
-    </div>
-  `;
-    homePage.appendChild(newCard);
-  });
+      <div class="card-content">
+      <img class="headshot"src=${profilePicLink}>
+      <img class="flag"src="./images/${country}.png">
+      <div class="card-bio">
+      <p><b>${name}</b></p>
+      <p>${distance} km away</p>
+      <p>${yearsOfExperience} Years of experience</p>
+      </div>
+      </div>
+      </div>
+      `;
+      homePage.appendChild(newCard);
+    });
+  }
 }
 
 const getInterpreter = [
