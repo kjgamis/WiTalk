@@ -3,80 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/styles.css" />
     <!--Import Google Icon Font-->
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet" />
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet" />
     <!--Import materialize.css-->
     <link
-      type="text/css"
-      rel="stylesheet"
-      href="../src/materialize.min.css"
-      media="screen,projection" />
-
+    type="text/css"
+    rel="stylesheet"
+    href="materialize.min.css"
+    media="screen,projection" />
+    <link rel="stylesheet" href="styles.css" />
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your App</title>
+    <title>WiTalk</title>
   </head>
   <body>
     <div class="app">
-      <div class="img">
-        <div class="container">
-            <form>
-              <div id="login-form" class="form">
-                <h2>WiTalk</h2>
-                <div class="loginPage page" id="pageOne">
-                  <div class="buttons">
-                      <a class="waves-effect waves-light btn1">Create an Account</a>
-                      <a class="waves-effect waves-light btn2">Login</a>
-                  </div>
-                  <p>Need help logging in? <a href="#" onclick="showSignupForm()">Contact Us</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      <div class="pageContainer name">
-        <div class = pageOne ></div>
-        <div class = pageTwo></div>
-        <div class = pageThree></div>
-        <div class = pageFour></div>
-        <div class = pageFive></div>
-        <div class = pageSix></div>
-        <div class="continueButton">
-          <a class="waves-effect waves-light continueBtn">Continue</a>
+      <div class="pages" id="page1">
+        <h1>WiTalk</h1>
+        <a class="waves-effect waves-light btn-large button" id="button1">Create an account</a>
+        <br>
+        <a class="waves-effect waves-light btn-large button" id="button2" class="button">Login</a>
+      </div>
+      <div class="pages" id="page2">
+        <h2>Let's get started.</h2>
+        <h2>What's your full name?</h2>
+        <form>
+          <label for="first-name">First Name <input id="first-name" name="first-name" type="text" required /></label>
+          <label for="last-name">Last Name <input id="last-name" name="last-name" type="text" required /></label>
+        </form>
+        <a class="waves-effect waves-light btn-large button" id="button3">Continue</a>
+      </div>
+      <div class="pages"id="page3">
+        <h2>Hi Amrit. Enter your email address</h2>
+        <h4>This will be the email you use for your login.</h4>
+        <form>
+            <label for="email">Email <input id="last-name" name="last-name" type="text" required /></label>
+        </form>
+        <a class="waves-effect waves-light btn-large button" id="button4">Continue</a>
+      </div>
+      <div class="pages" id="page4">
+        <h2>I'm interested in</h2>
+        <a class="waves-effect waves-light btn-large choice" id="button5">Connecting with an interpreter</a>
+        <h4>or</h4>
+        <a class="waves-effect waves-light btn-large choice" id="button6">Connecting with a newcomer</a>
+      </div>
+      <div class="pages" id="page5">
+        <div class="browser-default">
+          <h4>What province do you live in?</h4>  
+          <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Alberta </option>
+            <option value="2">British Columbia</option>
+            <option value="3">Manitoba</option>
+            <option value="4">New Brunswick</option>
+            <option value="5">Newfoundland and Labrador</option>
+            <option value="6">Nova Scotia</option>
+            <option value="7">Ontario</option>
+            <option value="8">Prince Edward Island</option>
+            <option value="9">Quebec</option>
+            <option value="10">Saskatchewan</option>
+            <option value="11">Northwest Territories</option>
+            <option value="12">Nunavut</option>
+            <option value="13">Yukon</option>
+          </select>
+          <a class="waves-effect waves-light btn-large button" id="button7">Continue</a>
         </div>
       </div>
-
-        <div id="signup-form" class="form hidden">
-          <h2>Sign Up</h2>
-          <form id="signup-form">
-            <label for="signup-username">Username:</label>
-            <input type="text" id="signup-username" required />
-            <label for="signup-password">Password:</label>
-            <input type="password" id="signup-password" required />
-            <button type="button" onclick="signup()">Sign Up</button>
-            <p>
-              Already have an account?
-              <a href="#" onclick="showLoginForm()">Back to Login</a>
-            </p>
+      <div class="pages"id=page6>
+        <h4>What language do you speak?</h4>
+                  
+        <select class="browser-default">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">English</option>
+          <option value="2">Mandarin</option>
+          <option value="3">Hindi</option>
+          <option value="4">Spanish</option>
+          <option value="5">French</option>
+          <option value="6">Modern standard Arabic</option>
+          <option value="7">Bengali</option>
+          <option value="8">Russian</option>
+          <option value="9">Portuguese</option>
+          <option value="10">Urdu</option>
+          <option value="11">Indonesian</option>
+          <option value="12">German</option>
+          <option value="13">Japanese</option>
+          <option value="14">Nigerian</option>
+          <option value="15">Marathi</option>
+          <option value="16">Telugu</option>
+          <option value="17">Turkish</option>
+          <option value="18">Tamil</option>
+          <option value="19">Yue Chinese</option>
+          <option value="10">Korean</option>
+        </select>
+        <a class="waves-effect waves-light btn-large button" id="button8">Continue</a>
+      </div>
+      <div class="pages" id="page7">
+          <h4>Create a password for your login</h4>
+          <form>
+              <label for="pass">Password<input id="pass" name="pass" type="text" required /></label>
           </form>
-        </div>
-
-        <div id="registration-success" class="hidden">
-          <p>Registration successful! You can now log in.</p>
-        </div>
-
-        <!-- Add a success page -->
-        <div id="success-page" class="form hidden">
-          <p>Welcome! You have successfully logged in.</p>
-          <button type="button" onclick="navigateToLogin()">
-            Back to Login
-          </button>
-        </div>
+          <a class="waves-effect waves-light btn-large button" id="button9">Continue</a>
+      </div>
+      <div class="pages"id="page8">
+        <h4>Enter your info</h4>
+        <form>
+          <label for="user">Username<input id="user" name="user" type="text" required /></label>
+          <label for="pass">Password<input id="pass" name="pass" type="text" required /></label>
+          <a class="waves-effect waves-light btn-large button">Continue</a>
+        </form>
+      </div>
+      <div class="cards"id="homepage">
+          
       </div>
     </div>
-    <script type="text/javascript" src="/src/materialize.min.js"></script>
-    <script src="script.js"></script>
+
+	<script src="script.js"></script>
   </body>
 </html>
