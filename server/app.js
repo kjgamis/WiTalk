@@ -6,7 +6,6 @@ const Problem = require('api-problem')
 const problemMiddleware = require('api-problem/lib/middleware')
 const errorHandlerMiddleware = require('./middleware/errorHandler')
 const interpreter = require('./routes/interpreter')
-const user = require('./routes/user')
 
 app.use(cors())
 // parse form data
