@@ -74,8 +74,8 @@ function addNewCard() {
           <a class=" halfway-fab waves-effect waves-light"></a>
         </div>
         <div class="card-content">
-          <img class="headshot"src="/src/images/jessicaDiaz.jpg">
-          <img class="flag"src="/src/images/columbia.png">
+          <img class="headshot"src="./images/jessicaDiaz.jpg">
+          <img class="flag"src="./images/columbia.png">
           <div class="card-bio">
             <p><b>${getInterpreter.name}</b></p>
             <p>${getInterpreter.distance}</p>
