@@ -1,4 +1,4 @@
-# WiTalk
+# [WiTalk](https://www.witalk.co)
 
 WiTalk is more than an app; it's a digital bridge fostering connections and empowering Canadian newcomers through language access. As part of our mission to create an inclusive community, WiTalk allows both newcomers and interpreters to sign up for distinct accounts, creating a platform where language is no longer a barrier but a bridge to opportunity.
 
